@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./fonts";
+import Particle from "@/components/particle";
 
 
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-zinc-950 text-zinc-50  max-w-screen-2xl mx-auto px-4`}
       >
+        <Particle />
         {children}
       </body>
     </html>
